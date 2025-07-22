@@ -65,7 +65,7 @@ def test_last_interval_weighter():
 
 	G.add_weighted_edges_from([(2,1,5), (1,6,6)]) # 1 node enters
 	w_in_degs = wiu.weighted_in_degree(G, G.nodes(), G.number_of_nodes(), last_weighter)
-	print w_in_degs
+	print (w_in_degs)
 	assert w_in_degs[1] == 1
 	assert w_in_degs[2] == 0
 	assert w_in_degs[3] == 0 # indegree decreases from 2 to 0
