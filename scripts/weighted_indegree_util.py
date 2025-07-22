@@ -51,7 +51,7 @@ def weighted_in_degree(graph, node_ids, current_node_num, weighter_obj):
 
 ### GRAPH PROCESSOR ###
 def weighted_indegree_graph_processor(node_time_sorted_data, weighter_obj, step_size):
-    print 'Processing weighted indegrees by %i nodes STARTED...' % step_size
+    print ('Processing weighted indegrees by %i nodes STARTED...' % step_size)
     num_of_nodes = len(node_time_sorted_data)
     weighted_indegrees = []
     G = nx.DiGraph()
@@ -70,6 +70,6 @@ def weighted_indegree_graph_processor(node_time_sorted_data, weighter_obj, step_
             new_edges = []
             step_index = node_num
             counter += 1
-    print 'Processing weighted indegrees FINISHED.'
-    print 'The number of total steps were: %i' % counter
+    print ('Processing weighted indegrees FINISHED.')
+    print ('The number of total steps were: %i' % counter)
     return weighted_indegrees
